@@ -1,0 +1,524 @@
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+      
+}
+body{
+  width: 100%;
+}
+img{
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+.main{
+    height: 90vh;
+    background: url('/images/IMG-20230618-WA0008.jpg') no-repeat center fixed;
+    background-size:cover;
+    
+}
+
+nav{
+    display: flex;
+    justify-content:space-around;
+    align-content:space-between;
+    min-height: 8vh;
+    font-family: 'Teko', sans-serif;
+    background-color: rgba(255, 254, 254, 0.438);
+    position: relative;
+    padding-top: 10px;
+}
+.logos{
+   width: 150px;
+   height: auto;
+   padding-top: 0;
+   margin-top:0;
+}
+.nav-links{
+    display: flex;
+    width: 40%;
+    align-content: center;
+    justify-content: space-between;
+}
+
+.nav-links li{
+    list-style: none;
+    font-size: 30px;
+}
+.nav-links a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+.nav-links a:hover{
+    text-decoration: underline;
+    font-weight: 200;
+}
+.burger{
+    display: none;
+    cursor: pointer;
+}
+.burger div{
+    width: 25px;
+    height: 3px;
+    background-color:rgb(0, 0, 0) ;
+    margin: 4px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1024px) {
+   .nav-links{
+    width: 60%;
+   }
+   .left p {
+    visibility: hidden;
+   }
+   .left .Explore{
+    visibility: hidden;
+   }
+  }
+@media screen and (max-width:768px) {
+    body{
+        overflow-x: hidden;
+    }
+   .nav-links{
+    position: absolute;
+    right: 0px;
+    height: 70vh;
+    top: 8vh;
+    background-color: #d82114;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    padding-bottom: 40px;
+    padding-top: 40px;
+
+   }
+   .nav-links li{
+    opacity: 0;
+   }
+    .nav-links .pili{
+    padding-left: 70px;
+   }
+   .burger{
+    display: block;
+   }
+   
+}
+.nav-active{
+    transform: translateX(0%);
+}
+@keyframes navLinkFade {
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.toggle .line2{
+    opacity: 0;
+}
+.toggle .line3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+
+.grid-container{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Teko', sans-serif;
+    }
+  
+    .left{
+      display: grid;
+      float: left;
+      top: 18em;
+      position: relative;
+      width: 45%;
+      color: #1d1d1d;
+    }
+    .left h2{
+      font-size: 27px;margin-bottom: 10px;
+      margin-left: 8px;
+    }
+    .left p{
+      display: none;
+    }
+    .right{
+      display: flex;
+      float: right;
+      display: none;
+    }
+    .Explore{
+      display: none;
+    }
+
+    /*Partners*/
+    .Partners{
+      padding-left: 100px;
+      padding-right: 100px;
+    }
+    .cards-list {
+        z-index: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+      }
+      
+      .card {
+        margin: 20px auto;
+        width: 180px;
+        height: 140px;
+        border-radius: 30px;
+      box-shadow: 5px 5px 30px 7px rgba(85, 168, 224, 0.25), -5px -5px 30px 7px rgba(85, 83, 83, 0.22);
+        cursor: pointer;
+        transition: 0.4s;
+      }
+      .card p{
+        visibility: hidden;
+      }
+
+      
+      .card .card_image {
+        width: inherit;
+        height: inherit;
+        border-radius: 71px;
+      }
+      
+      .card .card_image img {
+        width: inherit;
+        height: inherit;
+        border-radius: 20px;
+        object-fit:fill;
+      }
+      
+      .card .card_title {
+        text-align: center;
+        border-radius: 0px 0px 40px 40px;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-top: -80px;
+        height: 40px;
+        color: #070707;
+      }
+      .card:hover {
+        transform: scale(0.9, 0.9);
+        box-shadow: 5px 5px 30px 15px rgba(209, 70, 70, 0.507), 
+          -5px -5px 30px 15px rgba(78, 178, 196, 0.582);
+      }
+      .card:hover p{
+        visibility:hidden;
+        color: rgb(68, 69, 70);
+      }
+      
+      .title-white {
+        color: white;
+      }
+      
+      .title-black {
+        color: black;
+      }
+      
+      @media all and (max-width: 500px) {
+        .Partners{ 
+          width: 100%;
+          padding: 0;
+          height: 45vh;
+        }
+        .cards-list {
+          /* On small screens, we are no longer using row direction but column */
+          display:flex;
+          flex-direction: row;
+          width: 100%;
+          padding-top:30px;
+          margin: 0;
+
+        }
+        #mikro{
+          visibility: hidden;
+        }
+        .card {
+          margin: 15px;
+          width: 120px;
+          height: 120px;
+          border-radius: 50px;
+        }
+    }
+  .joinus{
+    height: 80vh;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 0;
+  }
+  .kushoto{
+    background-color: #ffffff;
+    display: grid;
+    width: 50%;
+  }
+  .kushoto h2{
+    font-weight: 550;
+    font-size: 27px;
+    position: relative;
+    left: 117px;
+    top: 27px;
+    line-height: 39px;
+    color: #E01515;
+    height: 39px;
+  }
+  .kushoto h1{
+    position: relative;
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 46px;
+    left: 117px;
+    
+    height: 46px;
+    padding-bottom: 30px;
+  }
+  .kushoto p{
+    position: relative;
+    left: 117px;
+    width: 508px;
+  }
+  .becometh{
+    background-color:inherit;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .direct:hover{
+    background-color: rgb(25, 167, 37);
+  }
+  .direct{
+    background-color:  rgb(62, 172, 199);;
+    border-style: none;
+    border-radius: 20px;
+    padding: 30px;
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+  }
+  .direct a{
+    text-decoration: none;
+    color: #ffffff;
+  }
+  .kulia{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+  }
+  .nokia{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    position: relative;
+  }
+  .chonjoo{
+    border-radius: 25px;
+  }
+
+  
+@media screen and (max-width:1024px) {
+  
+ }
+@media screen and (max-width:768px) {
+  .joinus{
+    display:grid;
+    position: relative;
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+  }
+  .kulia{
+    width: 100%;
+  }
+  .kushoto {
+    width: 100%;
+  }
+  .kushoto h2{
+    left: 25px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  
+  .kushoto h1{
+    left: 27px;
+    font-size: 26px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .kushoto p{
+    margin-top: 20px;
+    left: 24px; 
+    padding-right: 10px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 16px;
+    overflow: hidden;
+    font-weight: 100;
+    margin-bottom: 10px;
+  }
+   }
+  
+  /*Portfolio link*/
+  .page2{
+    background-color: #5e5b5b36;
+    height: 30vh;
+    padding: 0;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+  }
+ 
+   
+  .container{
+    margin-left: 8em;
+    margin-right: 5em;
+  }
+  .row{
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    padding-top: 40px;
+
+  }
+  .col-md-4 {
+    text-align: center;
+    padding-bottom: 10px;
+    border-right: 0px dashed black;
+    display: block;
+  }
+  
+  .col-md-4:last-child {
+    border-right: 0px solid black;
+  }
+  
+  .counter {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    margin-bottom: 10px;
+  }
+  
+  i {
+    font-size: 40px !Important;
+  }
+  
+  @media (max-width: 751px) {
+    .page2{
+      height: 20vh;
+    }
+    .col-md-4 {
+      border-right: 0px dashed black;
+      border-bottom: 1px dashed black;
+      width: 100%;
+      margin: auto auto;
+      margin-left: 9px;
+      margin-right: 13px;
+
+    }
+    .page2{
+      font-size: 12px;
+    }
+    
+    .col-md-4:last-child {
+      border-bottom: 0px dashed black;
+    }
+  }
+
+  
+
+.footer{
+  background-color:rgb(88, 84, 84);
+  top: 0;
+
+ }
+.footsubishi{
+  max-width: 1170px;
+  margin: auto;
+}
+.shubaru{
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+.toeyota{
+  width: 25%;
+  padding: 0 15px;
+  color: #ffffff;
+}
+.toeyota ul{
+  list-style: none;
+}
+.toeyota h4{
+  font-size: 18px;
+  color: #070707;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 500;
+  position: relative;
+}
+.toeyota h4::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #ffffff;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.toeyota ul li:not( :last-child){
+  margin-bottom: 10px;
+}
+.toeyota ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: rgb(31, 30, 31);
+  text-decoration: none;
+  font-weight: 300;
+  color:rgb(252, 248, 248);
+  display: block;
+  transition: all 0.3s ease;
+  
+}
+.toeyota ul li a:hover{
+  color: rgb(0, 17, 12);
+  padding-left: 8px;
+}
+/*Responsive footer*/
+@media(max-width: 1000px){
+  .toeyota{
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .toeyota{
+    width: 100%;
+    margin-bottom: 30px;
+    padding-top: 10px;
+  }
+  .shubaru{
+    padding-top: 30px;
+  }
+}
