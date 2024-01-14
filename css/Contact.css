@@ -1,5 +1,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
 
+
+body{
+  font-family: 'IBM Plex Sans', sans-serif;
+}
 .main{
   
   background: url('/images/IMG-20230618-WA0002.jpg') no-repeat center fixed;
@@ -7,124 +11,147 @@
   
 }
 
-nav{
-  display: flex;
-  justify-content:space-around;
-  align-content:space-between;
-  min-height: 8vh;
-  font-family: 'Teko', sans-serif;
-  background-color: rgba(255, 254, 254, 0.438);
-  position: relative;
-  padding-top: 10px;
-}
 .logos{
- width: 150px;
- height: auto;
- padding-top: 0;
- margin-top:0;
+  width: 150px;
+  height: auto;
+  padding-top: 0;
+  margin-top:0;
 }
-.nav-links{
-  display: flex;
-  width: 40%;
-  align-content: center;
-  justify-content: space-between;
+nav{
+  background:rgba(75, 72, 72, 0.384);
+  height: 70px;
+  width: 100%;
+  font-family: 'IBM Plex Sans', sans-serif;
 }
-
-.nav-links li{
-  list-style: none;
-  font-size: 30px;
-}
-.nav-links a{
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  font-size: 20px;
-  letter-spacing: 3px;
-  font-weight: 500;
-}
-.nav-links a:hover{
-  text-decoration: underline;
-  font-weight: 200;
-}
-.burger{
-  display: none;
-  cursor: pointer;
-}
-.burger div{
-  width: 25px;
-  height: 3px;
-  background-color:rgb(0, 0, 0) ;
-  margin: 4px;
-  transition: all 0.3s ease;
-}
-@media screen and (max-width:1024px) {
- .nav-links{
-  width: 60%;
- }
- .left p {
-  visibility: hidden;
- }
- .left .Explore{
-  visibility: hidden;
- }
-}
-@media screen and (max-width:768px) {
-  body{
-      overflow-x: hidden;
-  }
- .nav-links{
+.logo{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 40px;
+  font-weight: bold;
   position: absolute;
-  right: 0px;
-  height: 70vh;
-  top: 8vh;
-  background-color: #d82114;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 50%;
-  transform: translateX(100%);
-  transition: transform 0.5s ease-in;
-  padding-bottom: 40px;
-  padding-top: 40px;
-  z-index: 111;
-  font-family:Georgia, 'Times New Roman', Times, serif;
 
- }
- .nav-links li{
-  opacity: 0;
- }
-  .nav-links .pili{
-  padding-left: 70px;
- }
- .burger{
-  display: block;
- }
+}
+nav ul{
+  float: right;
+  margin-right: 15em;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 22px;
+}
+nav ul li a{
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  padding: 7px 13px;
+  border-radius: 3px;
  
+  text-decoration: none;
 }
-.nav-active{
-  transform: translateX(0%);
+a.active{
+  text-transform: uppercase;
+  font-weight: 600;
+  
 }
-@keyframes navLinkFade {
-  from{
-      opacity: 0;
-      transform: translateX(50%);
+
+ul li :hover {
+  color: #494a4b;
+}
+ul li:before {
+  content: "";
+  position: absolute;
+  inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+  background: #ce4f20; /* the color */
+  scale: 0 ;
+  transition: .3s, translate 0s .3s;
+}
+ul:hover li:before {
+  scale: 1;
+}
+ul li:hover:before {
+  translate: 0;
+  transition: .3s;
+}
+ul:hover li:has(~ li:hover):before {
+  translate: 100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+ul:hover li:hover ~ li:before {
+  translate: -100% 0;
+  transition: .2s .2s,scale 0s .4s;
+}
+
+
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+
+@media screen and (max-width:1024px) {
+   .left p {
+    visibility: hidden;
+    display: none;
+   }
+   .left .Explore{
+    visibility: hidden;
+    display: none;
+   }
+
+   .logo{
+    font-size: 30px;
+    padding-left: 50px;
   }
-  to{
-      opacity: 1;
-      transform: translateX(0%);
+  nav ul li a{
+    font-size: 16px;
   }
 }
-.toggle .line1{
-  transform: rotate(-45deg) translate(-5px,6px);
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #414242b2;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+    color: #ffffff;
+  }
+  #check:checked ~ ul{
+    left: 0;
+    z-index: 1111;
+  }
+  .logos{
+    width:100%;
+    padding-right:0;
+  }
+  .logo{
+    width: 50%;
+  }
 }
-.toggle .line2{
-  opacity: 0;
-}
-.toggle .line3{
-  transform: rotate(45deg) translate(-5px,-6px);
-}
-
-
-
 
 * {
   margin: 0;
@@ -144,7 +171,7 @@ body {
   font-size: 12px;
   line-height: 30px;
   color: #000000;
-  background: #52d32b;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
 }
 
 .container {
@@ -288,9 +315,6 @@ fieldset {
   width: 25%;
   padding: 0 15px;
 }
-.toeyota ul{
-  list-style: none;
-}
 .toeyota h4{
   font-size: 18px;
   color: #070707;
@@ -309,23 +333,18 @@ fieldset {
   box-sizing: border-box;
   width: 50px;
 }
+
+.toeyota a{
+  text-decoration: none;
+}
+.toeyota a:hover{
+color: #e4e4e4;
+}
+.toeyota p{
+  padding-bottom:20px;
+}
 .toeyota ul li:not( :last-child){
   margin-bottom: 10px;
-}
-.toeyota ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: rgb(31, 30, 31);
-  text-decoration: none;
-  font-weight: 300;
-  color:rgb(252, 248, 248);
-  display: block;
-  transition: all 0.3s ease;
-  
-}
-.toeyota ul li a:hover{
-  color: rgb(0, 17, 12);
-  padding-left: 8px;
 }
 /*Responsive footer*/
 @media(max-width: 1000px){
