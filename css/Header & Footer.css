@@ -1,0 +1,293 @@
+:root {
+    --blue:  #3299dd;
+    --white: #ffffff;
+  }
+  *{
+      margin: 0px;
+      padding:0px;
+      box-sizing: border-box;
+  
+  }
+  body{
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    overflow-x: hidden;
+    background-color: var(--white);
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  .logos{
+    width: 150px;
+    height: auto;
+    padding-top: 0;
+    margin-top:0;
+  }
+  nav{
+    width: 100%;
+    font-family: 'IBM Plex Sans', sans-serif;
+    position: absolute;
+    z-index: 11111;
+    
+    background: rgba(82, 81, 81, 0.08);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(82, 81, 81, 1);
+  }
+
+  #trans ul li a {
+    color: #000000;
+  }
+  #trans ul li a:hover {
+    color: #3299dd;
+  }
+  
+  .logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 40px;
+    font-weight: bold;
+    position: absolute;
+  
+  }
+  nav ul{
+    float: right;
+    margin-right: 15em;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 22px;
+  }
+  nav ul li a{
+    color: rgb(255, 255, 255);
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+   
+    text-decoration: none;
+  }
+  a.active{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px;
+    
+  }
+  
+  ul li :hover {
+    color: #494a4b;
+  }
+  nav ul li:before {
+    content: "";
+    position: absolute;
+    inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
+    background: #3299dd; /* the color */
+    scale: 0 ;
+    transition: .3s, translate 0s .3s;
+  }
+  ul:hover li:before {
+    scale: 1;
+  }
+  ul li:hover:before {
+    translate: 0;
+    transition: .3s;
+  }
+  ul:hover li:has(~ li:hover):before {
+    translate: 100% 0;
+    transition: .2s .2s,scale 0s .4s;
+  }
+  ul:hover li:hover ~ li:before {
+    translate: -100% 0;
+    transition: .2s .2s,scale 0s .4s;
+  }
+  
+  
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  
+  @media screen and (max-width:1024px) {
+     .left p {
+      visibility: hidden;
+      display: none;
+     }
+     .left .Explore{
+      visibility: hidden;
+      display: none;
+     }
+  
+     .logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #414242b2;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    a:hover,a.active{
+      background: none;
+      color: #ffffff;
+    }
+    #check:checked ~ ul{
+      left: 0;
+      z-index: 1111;
+    }
+    .logos{
+      width:100%;
+      padding-right:0;
+    }
+    .logo{
+      width: 50%;
+    }
+  }
+  
+
+    
+ /*Footer */  
+
+   
+#footer{
+    position: relative;
+    background-image: url(/images/Polygon\ Luminary.svg)
+    
+  }
+  .footer{
+    padding-top: 1.7em;
+    position: relative;
+  
+   }
+  .footsubishi{
+    max-width: 1170px;
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  .shubaru{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 20px;
+  }
+  .toeyota{
+    width: 25%;
+    padding: 0 10px;
+    color: #0a0a0a;
+  }
+  .toeyota a{
+    text-decoration: none;
+    color: white;
+  }
+  .toeyota a:hover{
+    color: var(--blue);
+  }
+  .toeyota p{
+    padding-bottom:2px;
+  }
+  .toeyota h4{
+    font-size: 20px;
+    color: #f1eded;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+  }
+  .toeyota h4::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #050505;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+  }
+  .toeyota ul li:not( :last-child){
+    margin-bottom: 10px;
+  }
+  .toeyota ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: rgb(31, 30, 31);
+    text-decoration: none;
+    font-weight: 300;
+    color:rgb(12, 11, 11);
+    display: block;
+    transition: all 0.3s ease;
+    
+  }
+  .toeyota ul li a:hover{
+    color: rgb(60, 112, 255);
+    padding-left: 8px;
+  }
+  /*Responsive footer*/
+  @media(max-width: 1000px){
+    .toeyota{
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  @media (max-width: 750px) {
+    
+    .footer{
+      height:auto;
+    }
+    .toeyota{
+      width: 100%;
+      margin-bottom: 30px;
+      padding-top: 10px;
+      
+    }
+  
+    .shubaru{
+      padding-top: 30px;
+    }
+  }
+  
+  
+  .hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 2s;
+  }
+  
+  
+  .show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+  }
+  

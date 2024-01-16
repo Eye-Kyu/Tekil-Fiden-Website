@@ -13,126 +13,17 @@ img{
   height: auto;
   width: 100%;
 }
+
 .main{
-  position:relative;
-  z-index: 1111;
+  position: relative;
 }
 
-.logos{
-  width: 150px;
-  height: auto;
-  padding-top: 0;
-  margin-top:0;
-}
-nav{
-  /*
-  background:linear-gradient(60deg, rgb(53, 91, 173) 0%, rgba(0,172,193,1) 100%);
-   */
-   background-color: #9b9b9c36; 
-  height: 80px;
-  width: 100%;
-}
-.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 70px;
-  font-weight: bold;
-  position: absolute;
 
-}
-nav ul{
-  float: right;
-  margin-right: 15em;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 22px;
-}
-nav ul li a{
-  color: rgb(43, 43, 43);
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
- 
-  text-decoration: none;
-}
-a.active{
-  text-transform: uppercase;
-  font-weight: 600;
-  
-}
-a:hover{
-  color: #acaaaa;
-  transition: .5s;
-}
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-
-@media screen and (max-width:1024px) {
-   .left p {
-    visibility: hidden;
-    display: none;
-   }
-   .left .Explore{
-    visibility: hidden;
-    display: none;
-   }
-
-   .logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #2c3e50;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color: #ffffff;
-  }
-  #check:checked ~ ul{
-    left: 0;
-  }
-}
   /*Hero section*/
   .clientelle{
   width: 100vw;
   display: grid;
-  padding: 2em 2em;
+  padding-top: 7em;
 }
 .clientelle h1{
   text-align: center;
@@ -447,6 +338,7 @@ transition-delay: 200ms;
   
   .contentS {
     width: 100%;
+    
   }
   
   .container {
@@ -698,101 +590,6 @@ h2{
 
 /*Team Ends*/
   
-.footer{
-  position: relative;
-  background-image: url(/images/Polygon\ Luminary.svg);
- top: 0;
- }
-.footsubishi{
-  max-width: 1170px;
-  margin: auto;
-}
-.shubaru{
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
-.toeyota{
-  width: 25%;
-  padding: 0 15px;
-  padding-top: 50px;
-}
-.toeyota a{
-  text-decoration: none;
-}
-.toeyota a:hover{
-color: #e4e4e4;
-}
-.toeyota p{
-  padding-bottom:20px;
-}
-.toeyota h4{
-  font-size: 18px;
-  color: #070707;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 500;
-  position: relative;
-}
-.toeyota h4::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #ffffff;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-.toeyota ul li:not( :last-child){
-  margin-bottom: 10px;
-}
-.toeyota ul li a{
-  font-size: 16px;
-  text-transform: capitalize;
-  color: rgb(31, 30, 31);
-  text-decoration: none;
-  font-weight: 300;
-  color:rgb(252, 248, 248);
-  display: block;
-  transition: all 0.3s ease;
-  
-}
-.toeyota ul li a:hover{
-  color: rgb(0, 17, 12);
-  padding-left: 8px;
-}
-/*Responsive footer*/
-@media(max-width: 1000px){
-  .toeyota h4{
-  padding-left:-10px;
-  }
-  .toeyota{
-    width: 50%;
-    margin-bottom: 30px;
-    padding-left:50px ;
-    font-size: 16px;
-  }
-}
-@media (max-width: 750px) {
-  .footer{
-    height: auto;
-  }
-  .toeyota{
-    width: 100%;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    font-size: 16px;
-    height: auto;
-  }
-
-  .shubaru{
-    padding-top: 30px;
-  }
-}
-
-
-
 .hidden{
   opacity: 0;
   filter: blur(5px);

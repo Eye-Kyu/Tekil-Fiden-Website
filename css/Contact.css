@@ -3,154 +3,14 @@
 
 body{
   font-family: 'IBM Plex Sans', sans-serif;
-}
-.main{
-  
-  background: url('/images/IMG-20230618-WA0002.jpg') no-repeat center fixed;
-  background-size:cover;
-  
-}
+  font-weight: 100;
+  line-height: 30px;
+  color: #000000;
+  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
 
-.logos{
-  width: 150px;
-  height: auto;
-  padding-top: 0;
-  margin-top:0;
 }
 nav{
-  background:rgba(75, 72, 72, 0.384);
-  height: 70px;
-  width: 100%;
-  font-family: 'IBM Plex Sans', sans-serif;
-}
-.logo{
-  color: white;
-  font-size: 35px;
-  line-height: 80px;
-  padding: 0 40px;
-  font-weight: bold;
-  position: absolute;
-
-}
-nav ul{
-  float: right;
-  margin-right: 15em;
-}
-nav ul li{
-  display: inline-block;
-  line-height: 80px;
-  margin: 0 22px;
-}
-nav ul li a{
-  color: rgb(255, 255, 255);
-  font-size: 17px;
-  padding: 7px 13px;
-  border-radius: 3px;
- 
-  text-decoration: none;
-}
-a.active{
-  text-transform: uppercase;
-  font-weight: 600;
-  
-}
-
-ul li :hover {
-  color: #494a4b;
-}
-ul li:before {
-  content: "";
-  position: absolute;
-  inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
-  background: #ce4f20; /* the color */
-  scale: 0 ;
-  transition: .3s, translate 0s .3s;
-}
-ul:hover li:before {
-  scale: 1;
-}
-ul li:hover:before {
-  translate: 0;
-  transition: .3s;
-}
-ul:hover li:has(~ li:hover):before {
-  translate: 100% 0;
-  transition: .2s .2s,scale 0s .4s;
-}
-ul:hover li:hover ~ li:before {
-  translate: -100% 0;
-  transition: .2s .2s,scale 0s .4s;
-}
-
-
-.checkbtn{
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 80px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: none;
-}
-#check{
-  display: none;
-}
-
-@media screen and (max-width:1024px) {
-   .left p {
-    visibility: hidden;
-    display: none;
-   }
-   .left .Explore{
-    visibility: hidden;
-    display: none;
-   }
-
-   .logo{
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  nav ul li a{
-    font-size: 16px;
-  }
-}
-@media (max-width: 858px){
-  .checkbtn{
-    display: block;
-  }
-  ul{
-    position: fixed;
-    width: 100%;
-    height: 100vh;
-    background: #414242b2;
-    top: 80px;
-    left: -100%;
-    text-align: center;
-    transition: all .5s;
-  }
-  nav ul li{
-    display: block;
-    margin: 50px 0;
-    line-height: 30px;
-  }
-  nav ul li a{
-    font-size: 20px;
-  }
-  a:hover,a.active{
-    background: none;
-    color: #ffffff;
-  }
-  #check:checked ~ ul{
-    left: 0;
-    z-index: 1111;
-  }
-  .logos{
-    width:100%;
-    padding-right:0;
-  }
-  .logo{
-    width: 50%;
-  }
+  top:0;
 }
 
 * {
@@ -163,15 +23,6 @@ ul:hover li:hover ~ li:before {
   -moz-font-smoothing: antialiased;
   -o-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-body {
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  font-weight: 100;
-  font-size: 12px;
-  line-height: 30px;
-  color: #000000;
-  background: linear-gradient(60deg, rgba(84,58,183,1) 0%, rgba(0,172,193,1) 100%);
 }
 
 .container {
@@ -295,72 +146,4 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
-}
-
-.footer{
-  background-color:transparent;
-  top: 0;
-
- }
-.footsubishi{
-  max-width: 1170px;
-  margin: auto;
-}
-.shubaru{
-  display: flex;
-  flex-wrap: wrap;
-  padding-top: 30px;
-}
-.toeyota{
-  width: 25%;
-  padding: 0 15px;
-}
-.toeyota h4{
-  font-size: 18px;
-  color: #070707;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 500;
-  position: relative;
-}
-.toeyota h4::before{
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  background-color: #ffffff;
-  height: 2px;
-  box-sizing: border-box;
-  width: 50px;
-}
-
-.toeyota a{
-  text-decoration: none;
-}
-.toeyota a:hover{
-color: #e4e4e4;
-}
-.toeyota p{
-  padding-bottom:20px;
-}
-.toeyota ul li:not( :last-child){
-  margin-bottom: 10px;
-}
-/*Responsive footer*/
-@media(max-width: 1000px){
-  .toeyota{
-    width: 50%;
-    margin-bottom: 30px;
-  }
-}
-@media (max-width: 750px) {
-  .toeyota{
-    width: 100%;
-    margin-bottom: 30px;
-    padding-top: 10px;
-    font-size: 14px;
-  }
-  .shubaru{
-    padding-top: 30px;
-  }
 }
