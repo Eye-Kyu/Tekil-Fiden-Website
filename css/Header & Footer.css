@@ -1,11 +1,14 @@
 :root {
     --blue:  #3299dd;
     --white: #ffffff;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 18px;
   }
   *{
       margin: 0px;
       padding:0px;
       box-sizing: border-box;
+     
   
   }
   body{
@@ -52,6 +55,7 @@
     padding: 0 40px;
     font-weight: bold;
     position: absolute;
+    cursor: pointer;
   
   }
   nav ul{
@@ -72,7 +76,7 @@
     text-decoration: none;
   }
   a.active{
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-weight: 700;
     font-size: 18px;
     
@@ -260,19 +264,24 @@
     }
   }
   @media (max-width: 750px) {
-    
     .footer{
       height:auto;
+      font-size: 14px;
     }
     .toeyota{
-      width: 100%;
+      width: 50%;
       margin-bottom: 30px;
       padding-top: 10px;
       
     }
-  
     .shubaru{
       padding-top: 30px;
+    }
+    .toeyota h4{
+      font-size: 18px;
+    }
+    .toeyota ul li a{
+      font-size: 12px;
     }
   }
   
@@ -289,5 +298,12 @@
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
+  }
+
+  
+  @media(prefers-reduced-motion) {
+    .hidden {
+      transition: none;
+    }
   }
   
