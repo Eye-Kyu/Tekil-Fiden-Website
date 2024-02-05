@@ -570,203 +570,42 @@ transform: skewY(1.5deg);
      }
         /*WHAT WE OFFER ENDS*/
 
-  .joinus{
-    height: auto;
-    position: relative;;
-    background-color: #ffffff;
-    display:flex;
-    position: relative;
-    justify-content: space-around;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-left: 120px;
-    padding-right: 80px;
-    width:100%;
-    padding-bottom: 2em;
-    margin-top: 2em;
-  }
-  #kushoto{
-    background-color: #ffffff;
-    display: block;
-    width: 50%;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-    transition-delay: 600ms;
-  }
-  #kushoto h2{
-    font-weight: 550;
-    font-size: 27px;
-    position: relative;
-    line-height: 39px;
-    color: #E01515;
-    height: 39px;
-    padding-bottom: 1.4em;
-    padding-top: 70px;
-  }
-  #kushoto h1{
-    position: relative;
-    font-size: 35px;
-    font-weight: 600;
-    line-height: 46px;
-    height: 46px;
-    padding-bottom: 2em;
-  }
-  #kushoto p{
-    position: relative;
-    width: 508px;
-    padding-bottom: 2em;
-  }
-  .becometh{
-    background-color:inherit;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    display: none;
-  }
- 
-  .btn41-43 {
-    padding: 10px 25px;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    background: transparent;
-    outline: none !important;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    text-decoration: none;
-  }
-  
-  .btn-41 {
-    border: 2px solid rgb(0, 0, 0);
-    z-index: 1;
-    color: rgb(0, 0, 0);
-  }
-  
-  .btn-41:after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 100%;
-    top: 0;
-    left: 0;
-    direction: rtl;
-    z-index: -1;
-    background: rgb(0, 0, 0);
-    border: 2px solid rgb(255, 255, 255);
-    transition: all 0.3s ease;
-   
-    
-  }
-  
-  .btn-41:hover {
-    color: rgb(255, 255, 255);
-    transform: scale(1.02);
-  }
-  
-  .btn-41:hover:after {
-    left: auto;
-    right: 0;
-    width: 100%;
-  }
-  
-  .btn-41:active {
-    top: 2px;
-  }
-
-  .kulia{
-  
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffffff;  
-    float: right;
-    padding-left: 10px;
-  }
-  .nokia{
-    width: 100%;
-    height: 90%;
-    display: flex;
-    position: relative;
-  }
-  .chonjoo{
-   border-radius: 59% 41% 62% 38% / 61% 39% 61% 39% ;
-  }
-
-  
-@media screen and (max-width:1024px) {
-  
- }
-@media screen and (max-width:768px) {
-  .joinus{
-    display:grid;
-    position: relative;
-    height:auto;
-    width: 100%;
-    overflow: hidden;
-    padding-left: 2em;
-    padding-right:1em ;
-  }
-  .kulia{
-    width: 100%;
-    padding: 0;
-    padding-bottom: 60px;
-  padding-right: 30px;
-  }
-  #kushoto {
-    width: 100%;
-  }
-  #kushoto h2{
-    font-size: 22px;
-    padding-top: 20px;
-    font-size:21px;
-    font-weight: 300;
-  }
-  
-  #kushoto h1{
-    font-size: 26px;
-    margin-bottom: 40px;
-    margin-top: 30px;
-  }
-  #kushoto p{
-    margin-top: 20px;
-    padding-right: 20px;
-    width: 100%;
-    line-height: 30px;
-    font-size: 16px;
-    overflow: hidden;
-    font-weight: 100;
-    margin-bottom: 30px;
-  }
-  .becometh{
-   padding-right: 30px;
-   padding-bottom:30px;
-  }
-  .direct{
-      background-color:  rgb(62, 172, 199);;
-      border-style: none;
-      border-radius: 10px;
-      font-size: 13px;
-      color: #ffffff;
-      font-weight: 500;
-      letter-spacing: 2px;
-      cursor: pointer;
-    }
-    .nokia{
-      width: 100%;
-      height: 90%;
-      display: flex;
-      position: relative;
-    }
-    .chonjoo{
-      height: 40vh;
-      border-radius: 10px;
-      width: 100vw;
-    }
-  }
-   
   
   /*Counter link*/
 
+.blog{
+  width: 100%;
+  position: relative;
+  display: flex;
+  height: 70vh;
+  
+}
+.words{
+  width: 55vw;
+  background-color: rgb(154, 194, 122);
+  height: 90%;
+  top:2.6em;
+  left: 4em;
+  position: absolute;
+  padding: 2em 5.9em 2em 2em;
+}
+.words h2{
+  font-size: 22px;
+}
+.words h1{
+  margin-bottom: 20px;
+}
+.statement-art{
+  width: 30vw;
+  background-image: url(/images/Partners.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 40vh;
+  position:absolute;
+  left: 40rem;
+  top:9em;
+  border-top-right-radius: 10em;
+  border-top-left-radius: 10em;
+  border-bottom-right-radius: 10em;
+  border-bottom-left-radius: 10em;
+}
