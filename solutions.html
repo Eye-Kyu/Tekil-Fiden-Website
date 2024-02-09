@@ -16,20 +16,25 @@
   
   <section class="main">
 
-    <nav id="trans">
-      <input type="checkbox" id="check">
-      <label for="check" class="checkbtn">
-        <i class="fas fa-bars"></i>
-      </label>
-      <div class="logo">
-        <img  class="logos" src="/images/Tekil Fiden Logo 1.png">
-      </div>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a class="active" href="solutions.html">Services and Solutions</a></li>
-        <li><a href="Contact.html">Contact</a></li>
-      </ul>
-    </nav>
+    <section class="landing-page">
+      <nav>
+        <ul class="sidebar">
+          <li onclick=hideSidebar()><a href="#">Close  Menu</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="solutions.html">Services and Solutions</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+  
+        <ul>
+          <li><a href="index.html"><img src="/images/favicon.ico"></a></li>
+          <li class="hideonMobile"><a href="index.html">Home</a></li>
+          <li class="hideonMobile"><a href="solutions.html">Services and Solutions</a></li>
+          <li class="hideonMobile"><a href="Contact.html">Contact Us</a></li>
+          <li class="menu-Button" onclick=showSidebar() ><a href="#">Hamburger Menu</a></li>
+        </ul>
+      </nav>
+      
+    </section>
 
   </section>
  

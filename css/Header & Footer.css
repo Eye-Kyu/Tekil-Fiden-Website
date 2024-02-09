@@ -16,178 +16,25 @@
     font-family: 'IBM Plex Sans', sans-serif;
     overflow-x: hidden;
     background-color: var(--white);
+    
   }
   img{
     max-width: 100%;
     height: auto;
     width: 100%;
   }
-  /*
-  .logos{
-    width: 150px;
-    height: auto;
-    padding-top: 0;
-    margin-top:0;
+  p {
+    font-size: 16px;
   }
-  nav{
-    width: 100%;
-    font-family: 'IBM Plex Sans', sans-serif;
-    position: absolute;
-    z-index: 11111;
-    
-    background: rgba(82, 81, 81, 0.08);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.7px);
-    -webkit-backdrop-filter: blur(4.7px);
-    border: 1px solid rgba(82, 81, 81, 1);
-  }
-
-  #trans ul li a {
-    color: #000000;
-  }
-  #trans ul li a:hover {
-    color: #3299dd;
-  }
-  
-  .logo{
-    color: white;
-    font-size: 35px;
-    line-height: 80px;
-    padding: 0 40px;
-    font-weight: bold;
-    position: absolute;
-    cursor: pointer;
-  
-  }
-  nav ul{
-    float: right;
-    margin-right: 15em;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 22px;
-  }
-  nav ul li a{
-    color: rgb(255, 255, 255);
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-   
-    text-decoration: none;
-  }
-  a.active{
-    text-transform: capitalize;
-    font-weight: 700;
-    font-size: 18px;
-    
-  }
-  
-  ul li :hover {
-    color: #494a4b;
-  }
-  nav ul li:before {
-    content: "";
-    position: absolute;
-    inset: calc(100% - 3px) 0 0 0; /* 3px = the thickness */
-    /*
-    background: #3299dd; /* the color */
-    /*
-    scale: 0 ;
-    transition: .3s, translate 0s .3s;
-  }
-  ul:hover li:before {
-    scale: 1;
-  }
-  ul li:hover:before {
-    translate: 0;
-    transition: .3s;
-  }
-  ul:hover li:has(~ li:hover):before {
-    translate: 100% 0;
-    transition: .2s .2s,scale 0s .4s;
-  }
-  ul:hover li:hover ~ li:before {
-    translate: -100% 0;
-    transition: .2s .2s,scale 0s .4s;
-  }
-  
-  
-  .checkbtn{
-    font-size: 30px;
-    color: white;
-    float: right;
-    line-height: 80px;
-    margin-right: 40px;
-    cursor: pointer;
-    display: none;
-  }
-  #check{
-    display: none;
-  }
-  
-  @media screen and (max-width:1024px) {
-     .left p {
-      visibility: hidden;
-      display: none;
-     }
-     .left .Explore{
-      visibility: hidden;
-      display: none;
-     }
-  
-     .logo{
-      font-size: 30px;
-      padding-left: 50px;
-    }
-    nav ul li a{
-      font-size: 16px;
-    }
-  }
-  @media (max-width: 858px){
-    .checkbtn{
-      display: block;
-    }
-    ul{
-      position: fixed;
-      width: 100%;
-      height: 100vh;
-      background: #414242b2;
-      top: 80px;
-      left: -100%;
-      text-align: center;
-      transition: all .5s;
-    }
-    nav ul li{
-      display: block;
-      margin: 50px 0;
-      line-height: 30px;
-    }
-    nav ul li a{
-      font-size: 20px;
-    }
-    a:hover,a.active{
-      background: none;
-      color: #ffffff;
-    }
-    #check:checked ~ ul{
-      left: 0;
-      z-index: 1111;
-    }
-    .logos{
-      width:100%;
-      padding-right:0;
-    }
-    .logo{
-      width: 50%;
-    }
-  }
-  
-  */
+ 
 
 
 nav{
   box-shadow: 3px 3px 5px rgba(58, 56, 56, 0.1);
+  background-color: transparent;
+  position: absolute;
+  z-index: 999;
+  width: 100vw;
 }
 nav ul{
   width: 100%;
@@ -205,7 +52,7 @@ nav a{
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: black;
+  color: rgb(255, 255, 255);
 }
 nav a:hover{
   color: var(--blue);
@@ -234,10 +81,16 @@ nav li:nth-child(1){
 .sidebar a{
   width: 100%;
 }
+.menu-Button{
+  display: none;
+}
 
 @media(max-width:800px){
   .hideonMobile{
     display: none;
+  }
+  .menu-Button{
+    display: block;
   }
 }
 @media(max-width:400px){

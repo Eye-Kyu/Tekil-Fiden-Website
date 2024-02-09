@@ -24,106 +24,57 @@
   <section class="landing-page">
     <nav>
       <ul class="sidebar">
-        <li onclick=hideSidebar><a href="#">Close  Menu</a></li>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Services and Solutions</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li onclick=hideSidebar()><a href="#">Close  Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="solutions.html">Services and Solutions</a></li>
+        <li><a href="Contact.html">Contact Us</a></li>
       </ul>
 
       <ul>
-        <li><a href="#">LOGO</a></li>
+        <li><a href="index.html"><img src="/images/favicon.ico"></a></li>
         <li class="hideonMobile"><a href="#">Home</a></li>
-        <li class="hideonMobile"><a href="#">Services and Solutions</a></li>
-        <li class="hideonMobile"><a href="#">Contact Us</a></li>
-        <li onclick=showSidebar()><a href="#">Hamburger Menu</a></li>
+        <li class="hideonMobile"><a href="solutions.html">Services and Solutions</a></li>
+        <li class="hideonMobile"><a href="Contact.html">Contact Us</a></li>
+        <li class="menu-Button" onclick=showSidebar() ><a href="#">Hamburger Menu</a></li>
       </ul>
     </nav>
     
-
-
   </section>
 
+<section class="swiper">
 
-  <!-- 
-    <section class="main">
-      <div class="backg">
-     
-              
-              <nav>
-                <input type="checkbox" id="check">
-                <label for="check" class="checkbtn">
-                  <i class="fas fa-bars"></i>
-                </label>
-                <div class="logo">
-                  <img  class="logos" src="/images/Tekil Fiden Logo 1.png">
-                </div>
-                <ul>
-                  <li><a class="active" href="#">Home</a></li>
-                  <li><a href="solutions.html">Services and Solutions</a></li>
-                  <li><a href="Contact.html">Contact </a></li>
-                </ul>
-              </nav>
+<div class="carousel">
+  <button class="carousel__button carousel__button--left">
+    <p>left</p>
+  </button>
 
-              
+  <div class="carousel__track-container">
+     <ul class="carousel__track">
+        <li class="carousel__slide current-slide">
+           <img src="/images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="">
+        </li>
+        <li class="carousel__slide">
+           <img src="/mtennis.jpg" alt="">
+        </li>
+        <li class="carousel__slide">
+           <img src="/Mtenno.jpg" alt="">
+        </li>
+     </ul>
+  </div>
 
-                <div id="carouselExampleCaptions" class="carousel slide">
-                  <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                  </div>
-                  <div class="carousel-inner">
+  <button class="carousel__button carousel__button--right">
+     <p>right</p>
+  </button>
 
-                      -->
-                    <!-- Mobile Image -->
-                    <div class="carousel-item active c-item">
-                      <img src="/images/viuu.jpg" class="d-block w-100 c-img d-md-none" alt="Vsat Solutions(Mobile)"
-                      loading="lazy" role="presentation" srcset="/images/viuu.jpg?width=300 300w, /images/viuu.jpg?width=500 500w, /images/viuu.jpg?width=800 800w, /images/viuu.jpg?width=1000 1000w">
-                      <img src="/images/sola.jpg" class="d-block w-100 c-img d-none d-md-block" alt="Solar panel Installation (Desktop)"
-                        loading="lazy" role="presentation" srcset="/images/sola.jpg?width=300 300w, /images/sola.jpg?width=500 500w, /images/sola.jpg?width=800 800w, /images/sola.jpg?width=1000 1000w">
-                      <div class="carousel-caption ">
-                        <h5>Get Connected In Remote Areas</h5>
-                        <p>Vsat Solutions.</p>
-                      </div>
-                    </div>
-                    <!-- Mobile Image -->
-                    <div class="carousel-item c-item">
-                      <img src="/images/bgreal.jpg" class="d-block w-100 c-img d-md-none" alt="Steel Communication Mast Erection (Mobile)" loading="lazy" role="presentation"
-                      srcset="/images/bgreal.jpg?width=300 300w, /images/bgreal.jpg?width=500 500w, /images/bgreal.jpg?width=800 800w, /images/bgreal.jpg?width=1000 1000w">
-                      <img src="/images/motongoi mast.jpg" class="d-block w-100 c-img d-none d-md-block" alt="Steel Communication Mast Erection (Desktop)" loading="lazy" role="presentation"
-                      srcset="/images/motongoi mast.jpg?width=300 300w, /images/motongoi mast.jpg?width=500 500w, /images/motongoi mast.jpg?width=800 800w, /images/motongoi mast.jpg?width=1000 1000w">>
-                      <div class="carousel-caption ">
-                        <h5>Steel Communication Mast Erection</h5>
-                        <p></p>
-                      </div>
-                    </div>
-                    <!-- Mobile Image -->
-                    <div class="carousel-item c-item">
-                      <img src="/images/sarva(1).jpeg" class="d-block w-100 c-img d-md-none" alt="Structured Cabling (Mobile)" loading="lazy" role="presentation"
-                      srcset="/images/sarva(1).jpeg?width=300 300w, /images/sarva(1).jpeg?width=500 500w, /images/sarva(1).jpeg?width=800 800w, /images/sarva(1).jpeg?width=1000 1000w">>
-                      <img src="/images/slider4(1).png" class="d-block w-100 c-img d-none d-md-block" alt="Solar Panel Installation(Desktop)" loading="lazy" role="presentation" 
-                      srcset="/images/slider4(1).png?width=300 300w, /images/slider4(1).png?width=500 500w, /images/slider4(1).png?width=800 800w, /images/slider4(1).png?width=1000 1000w">>
-                      <div class="carousel-caption ">
-                        <h5 class="heda">Solar Panel Installation</h5>
-                        <p class="parer">Structured Cabling</p>
-                      </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-                
-                
-    </section>
+  <div class="carousel__nav">
+     <button class="carousel__indicator current-slide"></button>
+     <button class="carousel__indicator"></button>
+     <button class="carousel__indicator"></button>
+  </div>
+</div>
 
 
-
+</section>
 
 
    
@@ -172,18 +123,21 @@
             <p>At the heart of TEKIL FIDEN's philosophy is a client-centric approach. The company firmly believes that clients are not just customers; they are partners on a mutual journey towards technological excellence. Every decision, from product development to customer service, is guided by the desire to meet and exceed client expectations.</p>
           
         </div>
+        <hr>
         <div id="hc2" class="h-cord">
         
             <h1>Exceptional Customer Service</h1>
             <p>TEKIL FIDEN prides itself on providing exceptional customer service. The company understands that reliable and responsive support is integral to client satisfaction. The dedicated customer service team is available around the clock to address queries, concerns, and technical issues promptly, ensuring clients feel supported and valued.</p>
-          
+           
         </div>
+        <hr>
         <div id="hc3" class="h-cord">
           
             <h1>Tailored Solutions</h1>
             <p>No two clients are the same, and TEKIL FIDEN recognizes this fact. The company is committed to offering customized solutions that align with each client's unique requirements and business goals. By taking the time to understand clients' needs, TEKIL FIDEN delivers solutions that are not just functional but truly impactful.</p>
           
         </div>
+        <hr>
       </div>
     </div>
 
@@ -195,18 +149,21 @@
             <p>Open and transparent communication is a cornerstone of TEKIL FIDEN's client relationships. The company believes that honest and clear communication fosters trust and collaboration. Clients are kept informed about project progress, challenges, and opportunities, enabling them to make informed decisions.</p>
           
         </div>
+        <hr>
         <div id="hc2" class="h-card">
   
             <h1>Partnership Mindset</h1>
             <p>We view our clients as partners, working together towards shared success. Our professionals immerse themselves in clients' businesses, aligning their goals and strategies. This partnership mindset ensures that clients receive guidance that goes beyond technical expertise, extending into strategic insight</p>
           
         </div>
+        <hr>
         <div id="hc3" class="h-card">
        
             <h1>Long-Term Relationships</h1>
             <p>TEKIL FIDEN's commitment to client value extends beyond the initial engagement. The company aims to build enduring relationships that span years. Through consistent delivery, support, and innovation, TEKIL FIDEN endeavors to be a long-term partner in its clients' growth journeys.</p>
           
         </div>
+        <hr>
       </div>
     </div>
   </section>
