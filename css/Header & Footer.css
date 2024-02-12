@@ -1,8 +1,10 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+
+
 :root {
     --blue:  #3299dd;
     --white: #ffffff;
-    font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 18px;
   }
   *{
       margin: 0px;
@@ -16,7 +18,13 @@
     font-family: 'IBM Plex Sans', sans-serif;
     overflow-x: hidden;
     background-color: var(--white);
+    font-weight: 100;
+    line-height: 30px;
     
+  }
+  body p{
+    font-size: 14px;
+    font-family: 'IBM Plex Sans', sans-serif;
   }
   img{
     max-width: 100%;
@@ -30,7 +38,7 @@
 
 
 nav{
-  box-shadow: 3px 3px 5px rgba(58, 56, 56, 0.1);
+  box-shadow: 3px 3px 5px rgba(11, 141, 248, 0.1);
   background-color: transparent;
   position: absolute;
   z-index: 999;
@@ -59,21 +67,28 @@ nav a:hover{
 }
 nav li:nth-child(1){
   margin-right: auto;
+  
+}
+.logo{
+  height: 80px;
+  width: 140px;
 }
 .sidebar{
   position: fixed;
   top:0;
   right: 0;
   height: 100vh;
-  width: 250px;
+  width: 550px;
   z-index: 996;
-  background-color: rgba(255, 255, 255, 0.281);
+  background-color: rgba(48, 48, 48, 0.432);
   backdrop-filter: blur(10px);
   box-shadow: -10px 0 10px rgba(58, 56, 56, 0.1);
   display: none;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  transition: ease-in-out 0.3s;
+  transition-delay: 200ms;
 }
 .sidebar li{
   width: 100%;
@@ -81,8 +96,12 @@ nav li:nth-child(1){
 .sidebar a{
   width: 100%;
 }
-.menu-Button{
+
+.hideonMobile{
   display: none;
+}
+.menu-Button{
+  display: block;
 }
 
 @media(max-width:800px){
@@ -102,109 +121,83 @@ nav li:nth-child(1){
 
     
  /*Footer */  
+ .new-footer {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: rgb(53, 53, 53);
+  padding: 4em;
+  gap: 4px;
+  font-size: 14px;
+  color: #ffffff;
+}
+.new-footer h4{
+  font-size: 16px;
+}
+.new-footer div{
+  margin-left: 20px;
+  margin-right: 10px;
+}
+.new-footer .footer-Definition {
+  background-color: rgb(33, 34, 34);
+  box-shadow: 16px 16px 10px rgba(0, 0, 0, 0.1);
+  width: 40vw;
+  border-radius: 10px;
+  padding: 18px;
+  border: solid rgb(85, 85, 85);
+  border-width: 0.6px;
+}
+.new-footer .footer-Definition .footer-logo img {
+  height: 50px;
+  width: 80px;
+}
+.Socials{
+  display: flex;
+}
+.new-footer .footer-Location {
+  width: 30vw;
+}
+.new-footer .footer-Contact {
+  width: 25vw;
+}
 
+.new-footer ul {
+  list-style: none;
+}
+
+.new-footer ul li {
+  margin: 10px;
+  padding: 4px;
+}
+
+.footer-Definition p {
+  line-height: 26px;
+  letter-spacing: 0.6px;
+}
+.Socials li{
+  cursor: pointer;
+}
+
+hr {
+  width: 50%;
+}
+
+.footer-Contact li a {
+  text-decoration: none;
+  color: #b4f397;
+}
+
+.footer-Contact li a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+  transform: scale(1.4);
+  transition: ease 100ms;
+}
+ul{
+  padding-left: 0;
+}
+
+/*Footer Ends*/
    
-#footer{
-    position: relative;
-    background-image: url(/images/Polygon\ Luminary.svg)
-    
-  }
-  .footer{
-    padding-top: 1.7em;
-    position: relative;
-  
-   }
-  .footsubishi{
-    max-width: 1170px;
-    margin: auto;
-    padding-bottom: 10px;
-  }
-  .shubaru{
-    display: flex;
-    flex-wrap: wrap;
-    padding-top: 20px;
-  }
-  .toeyota{
-    width: 25%;
-    padding: 0 10px;
-    color: #0a0a0a;
-  }
-  .toeyota a{
-    text-decoration: none;
-    color: white;
-  }
-  .toeyota a:hover{
-    color: var(--blue);
-  }
-  .toeyota p{
-    padding-bottom:2px;
-  }
-  .toeyota h4{
-    font-size: 20px;
-    color: #f1eded;
-    text-transform: capitalize;
-    margin-bottom: 30px;
-    font-weight: 500;
-    position: relative;
-  }
-  .toeyota h4::before{
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    background-color: #050505;
-    height: 2px;
-    box-sizing: border-box;
-    width: 50px;
-  }
-  .toeyota ul li:not( :last-child){
-    margin-bottom: 10px;
-  }
-  .toeyota ul li a{
-    font-size: 16px;
-    text-transform: capitalize;
-    color: rgb(31, 30, 31);
-    text-decoration: none;
-    font-weight: 300;
-    color:rgb(12, 11, 11);
-    display: block;
-    transition: all 0.3s ease;
-    
-  }
-  .toeyota ul li a:hover{
-    color: rgb(60, 112, 255);
-    padding-left: 8px;
-  }
-  /*Responsive footer*/
-  @media(max-width: 1000px){
-    .toeyota{
-      width: 100%;
-      margin-bottom: 30px;
-    }
-  }
-  @media (max-width: 750px) {
-    .footer{
-      height:auto;
-      font-size: 14px;
-    }
-    .toeyota{
-      width: 50%;
-      margin-bottom: 30px;
-      padding-top: 10px;
-      
-    }
-    .shubaru{
-      padding-top: 30px;
-    }
-    .toeyota h4{
-      font-size: 18px;
-    }
-    .toeyota ul li a{
-      font-size: 12px;
-    }
-  }
-  
-  
   .hidden{
     opacity: 0;
     filter: blur(5px);

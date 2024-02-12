@@ -30,6 +30,22 @@
   bottom: 0;
   width: 100%;
 }
+.carousel__slide:nth-child(1){
+  background-image: url(/images/adi-goldstein-EUsVwEOsblE-unsplash.jpg);
+  background-position: center;
+  object-fit: cover;
+  background-size: cover;
+}
+.landing-text{
+  display: flex;
+  flex-direction: column;
+  margin: 12em 8em 12em 8em;
+  color: white;
+  text-align: center;
+}
+.landing-text h3{
+  padding-bottom: 2em;
+}
 .carousel .carousel__button {
   position: absolute;
   top: 50%;
@@ -433,17 +449,20 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
   text-align: center;
   overflow: hidden;
 }
+.con-tainer span{
+  margin: 14px;
+}
 .con-tainer p span.typed-text {
-  font-weight: 600;
+  font-weight: 500;
   color: #3299dd;
   color: var(--blue);
 }
 .con-tainer p span.cursor {
   display: inline-block;
-  background-color: #ccc;
+  background-color: #858585;
   margin-left: 0.1rem;
-  width: 3px;
-  animation: blink 1s infinite;
+  width: 2px;
+  animation: blink 1.6s infinite;
 }
 .con-tainer p span.cursor.typing {
   animation: none;

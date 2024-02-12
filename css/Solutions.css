@@ -5,9 +5,8 @@
 }
 body{
   width: 100%;
-  font-family: 'IBM Plex Sans', sans-serif;
   overflow-x: hidden;
-  font-size: 16px;
+  background-color: rgb(71, 71, 71);
 }
 img{
   max-width: 100%;
@@ -33,10 +32,12 @@ img{
 }
 .weoffer h1{
   padding-bottom: 19px;
-  width: 60%;
+  width: 80%;
+  letter-spacing: 4px;
 }
 .weoffer p{
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 27px;
 }
 
 /*Services Start*/
@@ -53,27 +54,39 @@ img{
   object-fit: contain;
   width: 20vw;
   border: solid rgb(141, 145, 146);
+  border-width: 1.9px;
   margin-bottom: 2em;
   border-radius: 10px;
 }
 .mboka img{
-  height: 20vh;
-  border-radius: 0.5em;
+  height: 16vh;
+  width: 20vh;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+  padding-top: 6px;
+
 }
 .mboka p{
   font-size: 14px;
+  font-weight: 350;
+  padding: 8px;
 }
 .mboka h5{
   text-align: center;
-  font-size: 16px;
-  
+  font-size: 14px;
+  padding-top:7px;
+}
+.mboka hr{
+  margin: auto;
+  color: black;
 }
 
 
 /*Nationwide Clients*/
-.Clients{
-  background-color: rgb(43, 42, 42);
-}
+  .Clients{
+    background-color: rgb(95, 92, 92);
+  }
   .clientelle{
   width: 100vw;
   display: grid;
@@ -105,6 +118,11 @@ img{
  filter: grayscale(0%);
  transform: scale(1.1);
  transition: ease-in 280ms;
+ transition-delay: 100ms;
+}
+.arrangement .hero:nth-child(4){
+  height:30vh;
+  width:20vw;
 }
 
   .hero{
@@ -188,7 +206,7 @@ img{
 
 .Grow{
   display: flex;
-  padding: 1em 2em 1em 2em;
+  padding: 2em 2em 2em 2em;
   background-color: rgb(71, 71, 71);
 }
 .timu {
@@ -202,6 +220,7 @@ img{
 }
 .timu h3{
   font-size: 3em;
+  line-height: 1.2em;
 }
 .facecard {
   width: 60vw;
@@ -224,6 +243,7 @@ border-top-left-radius: 8em;
 .facecard :nth-child(3){
   background-color: orange;
   border-radius: 9em;
+
 }
 .facecard :nth-child(4){
   background-image: url(/images/Mtenno.jpg);
