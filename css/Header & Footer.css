@@ -63,7 +63,7 @@ nav a{
   color: rgb(255, 255, 255);
 }
 nav a:hover{
-  color: var(--blue);
+  color:black;
 }
 nav li:nth-child(1){
   margin-right: auto;
@@ -89,12 +89,20 @@ nav li:nth-child(1){
   justify-content: flex-start;
   transition: ease-in-out 0.3s;
   transition-delay: 200ms;
+  padding-top: 2em;
 }
 .sidebar li{
   width: 100%;
+  margin-top: 2em;
 }
+.fa-regular{
+  top: 0;
+  margin-top: -2em;
+}
+
 .sidebar a{
   width: 100%;
+  font-size: 16px;
 }
 
 .hideonMobile{
@@ -125,13 +133,15 @@ nav li:nth-child(1){
   display: grid;
   grid-template-columns: auto auto auto;
   background-color: rgb(53, 53, 53);
-  padding: 4em;
+  padding: 4em 10em 1em 4em;
   gap: 4px;
   font-size: 14px;
   color: #ffffff;
+  padding-right: 18em;
+  width: 100vw;
 }
 .new-footer h4{
-  font-size: 16px;
+  font-size: 14px;
 }
 .new-footer div{
   margin-left: 20px;
@@ -154,10 +164,10 @@ nav li:nth-child(1){
   display: flex;
 }
 .new-footer .footer-Location {
-  width: 30vw;
+  width: 20vw;
 }
 .new-footer .footer-Contact {
-  width: 25vw;
+  width: 16vw;
 }
 
 .new-footer ul {

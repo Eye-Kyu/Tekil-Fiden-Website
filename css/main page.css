@@ -88,7 +88,7 @@
 
 #why{
   background-image: url(/images/pattern.svg);
-  height: 59vh;
+  height: 56vh;
   position: relative;
   transition-delay: 100ms;
   margin-bottom: 5em;
@@ -120,7 +120,7 @@
 .cta {
   position: relative;
   margin: auto;
-  padding: 12px 18px;
+  padding: 2.9em 2em;
   transition: all 0.2s ease;
   border: none;
   background: none;
@@ -133,7 +133,7 @@
 .cta:before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 2.2em;
   left: 0;
   display: block;
   border-radius: 50px;
@@ -146,7 +146,7 @@
 .cta span {
   position: relative;
   font-family: "Ubuntu", sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #234567;
@@ -496,7 +496,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
         /*WHAT WE OFFER*/
         .Partners{
           background-color: rgb(49, 49, 49);
-          transform: skewY(-1.6deg);
+          /*transform: skewY(-1.6deg);*/
           overflow: hidden;
           position: relative;
           height: auto;
@@ -505,7 +505,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
           padding: 3.8rem;
           position:relative;
           width: 100%;
-          transform: skewY(1.6deg);
+          /*transform: skewY(1.6deg);*/
           
         }
         h3 {
