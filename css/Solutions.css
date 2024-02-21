@@ -39,6 +39,26 @@ img{
   font-size: 14px;
   line-height: 27px;
 }
+@media screen and (max-width:858px) {
+  .mbisha img{
+    width: 100vw;
+    height: 70vh;
+  }
+  .weoffer{
+    top: 10%;
+    right: 1%;
+    width: 50vw;
+  }
+  .weoffer h1{
+    padding-bottom: 8px;
+    letter-spacing: 2px;
+    font-size: 13px;
+  }
+  .weoffer p{
+    font-size: 11px;
+    line-height: 23px;
+  }
+}
 
 /*Services Start*/
 .mboka{
@@ -80,6 +100,33 @@ img{
 .mboka hr{
   margin: auto;
   color: black;
+}
+@media screen and (max-width:858px) {
+  .mboka{
+    grid-template-columns: auto auto;
+    padding: 0 1em 0 1em;
+    gap: 1em;
+    top: -16px;
+  }
+  .mboka div{
+    width: 46vw;
+    margin-bottom: 1em;
+  }
+  .mboka img{
+    height: 9vh;
+    width: 14vw;
+    padding-top: 3px;
+  }
+  .mboka p{
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 300;
+    padding: 4px;
+  }
+  .mboka h5{
+    font-size:14px
+  }
+
 }
 
 
@@ -135,72 +182,27 @@ img{
     object-fit: contain;
   }
   
- 
-  .flex { /*Flexbox for containers*/
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-  
-  .waves {
-    position:relative;
-    width: 100%;
-    height:15vh;
-    margin-bottom:-7px; /*Fix for safari gap*/
-    min-height:100px;
-    max-height:150px;
-  }
-  
-  .content {
-    position:relative;
-    height:20vh;
-    text-align:center;
-    background-color: white;
-  }
-  
-  /* Animation */
-  
-  .parallax > use {
-    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5)     infinite;
-  }
-  .parallax > use:nth-child(1) {
-    animation-delay: -2s;
-    animation-duration: 7s;
-  }
-  .parallax > use:nth-child(2) {
-    animation-delay: -3s;
-    animation-duration: 10s;
-  }
-  .parallax > use:nth-child(3) {
-    animation-delay: -4s;
-    animation-duration: 13s;
-  }
-  .parallax > use:nth-child(4) {
-    animation-delay: -5s;
-    animation-duration: 20s;
-  }
-  @keyframes move-forever {
-    0% {
-     transform: translate3d(-90px,0,0);
+  @media screen and (max-width:858px) {
+    .clientelle{
+      padding-top: 2em;
     }
-    100% { 
-      transform: translate3d(85px,0,0);
+    .clientelle h1{
+      font-size: 1.4rem;
+      font-weight: 500;
+    }
+    .arrangement{
+      width: 90vw;
+      height: 30vh;
+      gap: 3px;
+    }
+    .arrangement .hero{
+      filter: none;
+    }
+    .hero{
+      width: 60px;
+      height: 70px;
     }
   }
-  /*Shrinking for mobile*/
-  @media (max-width: 768px) {
-    .waves {
-      height:40px;
-      min-height:40px;
-    }
-   
-    h1 {
-      font-size:24px;
-    }
-  }
-  
- 
 
 /*Hero section ends*/
 
@@ -230,13 +232,13 @@ img{
   gap: 0px;
 }
 .facecard :nth-child(1){
-background-image: url(/images/MAnyeki\ \(1\).jpg);
+background-image: url(/images/viuu.jpg);
 border-top-right-radius: 8em;
 border-top-left-radius: 8em;
 border-bottom-left-radius: 8em;
 }
 .facecard :nth-child(2){
-background-image: url(/images/mtennis.jpg);
+background-image: url(/images/sola.jpg);
 border-top-right-radius: 8em;
 border-top-left-radius: 8em;
 }
@@ -246,7 +248,7 @@ border-top-left-radius: 8em;
 
 }
 .facecard :nth-child(4){
-  background-image: url(/images/Mtenno.jpg);
+  background-image: url(/images/watujuu.png);
   border-bottom-left-radius: 8em;
 }
 .facecard :nth-child(5){
@@ -261,7 +263,7 @@ border-top-left-radius: 8em;
   border-bottom-right-radius: 8em;
 }
 .facecard :nth-child(7){
-  background-image: url(/images/MAnyeki.jpg);
+  background-image: url(/images/slider2\(1\).png);
   border-top-right-radius: 8em;
   border-top-left-radius: 8em;
   border-bottom-left-radius: 8em;
@@ -277,7 +279,7 @@ border-top-left-radius: 8em;
   border-bottom-right-radius: 8em;
 }
 .facecard :nth-child(10){
-  background-image: url(/images/Landimbisha.jpg);
+  background-image: url(/images/bgreal.jpg);
   border-radius: 9em;
 }
 .facecard :nth-child(11){
@@ -287,10 +289,37 @@ border-top-left-radius: 8em;
   border-bottom-left-radius: 8em;
 }
 .facecard :nth-child(12){
-  background-image: url(/images/Gathesh.JPG);
+  background-image: url(/images/slidde.jpg);
   border-top-left-radius: 8em;
 }
 .facecard div{
   height: 30vh;
   background-size: cover;
+}
+@media screen and (max-width:858px) {
+  .Grow{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0em 1em 1em;
+    width: 100vw;
+  }
+  .timu{
+    gap: 6px;
+    width:100vw;
+  }
+  .timu h3{
+    font-size: 2em;
+  }
+  .timu p{
+    font-size: 13px;
+    padding: 1em 0 2em;
+  }
+  .facecard{
+    width: 90vw;
+    grid-template-rows:repeat(4, 1fr);
+    grid-template-columns:repeat(3, 1fr);
+  }
+  .facecard div{
+    height: 30vh;
+  }
 }

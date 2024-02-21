@@ -5,6 +5,7 @@
 :root {
     --blue:  #3299dd;
     --white: #ffffff;
+    --default-font: 'IBM Plex Sans', sans-serif;
   }
   *{
       margin: 0px;
@@ -245,6 +246,42 @@ ul{
   }
 
   
+@media(max-width:858px){
+  .new-footer{
+    padding: 2em 4em .5em 2em;
+    gap: 2px;
+    font-size: 12px;
+    padding-right: 8em;
+    display: flex;
+    flex-direction: column;
+  }
+  .new-footer h4{
+    font-size: 14px;
+    padding-top: 2em;
+  }
+  .new-footer div{
+    margin-left: 10px;
+    margin-right: 5px;
+  }
+  .new-footer .footer-Definition {
+    width: 87vw;
+    padding: 6px;
+  }
+  .footer-Definition p{
+    font-size: 12px;
+  }
+  .vl{
+    display: none;
+  }
+  .new-footer .footer-Location {
+    width: 75vw;
+  }
+  .new-footer .footer-Contact {
+    width: 75vw;
+  }
+
+}
+
   @media(prefers-reduced-motion) {
     .hidden {
       transition: none;
