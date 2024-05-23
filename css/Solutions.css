@@ -21,6 +21,9 @@ img{
 
 
   /*Hero section*/
+  #mengine {
+    z-index: 2;
+  }
   .mbisha {
     height: 95vh;
     padding: 4em 2em 2em 2em;
