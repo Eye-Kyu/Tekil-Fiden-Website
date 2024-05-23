@@ -57,6 +57,8 @@
 /*Carousel Slider*/
 .swiper{
   height: 100vh;
+  position: relative;
+  z-index: 2;
 }
 .carousel {
   position: relative;
@@ -84,6 +86,7 @@
   list-style: none;
   position: relative;
   height: 100%;
+  z-index: 2;
 }
 .carousel .carousel__slide {
   position: absolute;
@@ -100,6 +103,7 @@
   object-fit: cover;
   background-size: cover;
   position: relative;
+  z-index: 1;
 }
 .landing-text{
   display: flex;
@@ -107,8 +111,8 @@
   margin: 12em 8em 12em 8em;
   color: rgb(194, 5, 5);
   text-align: center;
-  z-index: 100;
   position: absolute;
+  z-index: 4;
 }
 .landing-text h3{
   padding-bottom: 2em;
@@ -884,4 +888,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     font-size: 12px;
     line-height: 26px;
   }
+}
+
+.info {
+
 }

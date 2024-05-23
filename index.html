@@ -26,7 +26,7 @@
 
 
   <section class="main">
-  <section class="landing-page">
+ <!-- <section class="landing-page">
     <nav>
       <ul class="sidebar">
         <li onclick=hideSidebar()><a href="#"><i class="fa-regular fa-circle-xmark"></i></a><hr></li>
@@ -46,6 +46,45 @@
     </nav>
     
   </section>
+  -->
+
+
+  <nav>
+    <div class="info">
+       <a href="index.html"><img src="/images/Tekil Fiden Logo 1.png"></a>
+    </div>
+   
+    <div class="toggle-btn">
+        <button class="burger"
+        onclick="this.classList.toggle('active');"></button>
+    </div>
+</nav>
+
+<div class="overlay">
+    <div class="overlay-menu">
+        <div class="menu-item">
+            <p id="active"><a href="index.html">Home</a></p>
+        </div>
+        <div class="menu-item">
+            <p><a href="solutions.html">Services and Solutions</a></p>
+        </div>
+        <div class="menu-item">
+            <p><a href="Contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <div class="sub-nav">
+        <p><a href="#">Twitter</a></p>
+        <p>.</p>
+        <p><a href="#">Instagram</a></p>
+        <p>.</p>
+        <p><a href="#">LinkedIn</a></p>
+        <p>.</p>
+        <p><a href="#">Facebook</a></p>
+        
+    </div>
+</div>
+
 
 <section class="swiper">
 
@@ -59,7 +98,8 @@
      <ul class="carousel__track">
 
         <li class="carousel__slide current-slide">
-         
+          <img src="/images/adi-goldstein-EUsVwEOsblE-unsplash.jpg" alt="">
+
            <div class="text-carousel">
 
             <div class="landing-text">
@@ -76,11 +116,7 @@
     style="width:37px;height:37px">
 </lord-icon>
           </div>
-
-          <div class="slider-bg">
-            <img src="/images/steel mast.jpg" alt="background-image">
-          </div>
-
+          
           </div>
           </li>
 
@@ -346,9 +382,11 @@
    </footer>
    
 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script src="https://unpkg.com/@studio-freight/lenis@1.0.36/dist/lenis.min.js"></script> 
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+   <script src="/gsap/gsap.min.js"></script>
+   <script src="/gsap/ScrollTrigger.min.js"></script>
+   <script src="/gsap/CSSRulePlugin.min.js"></script>
+
    
     <script src="/javascript/nav.js"></script> 
     <script src="/javascript/gsap.js"></script> 
