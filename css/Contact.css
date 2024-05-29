@@ -26,21 +26,24 @@ body{
 .fa-solid{
   color: black;
 }
+
+
 .SMS{
- background-color: rgb(255, 255, 255);
+ background-color: #ffffff;
  padding-top: 6rem;
+ padding-bottom: .4em;
  position: relative;
- z-index: 2;
+ z-index: 1;
 }
 .form-wrapper{
   max-width: 32rem;
-  background: rgb(34,98,195);
-background: linear-gradient(173deg, rgba(34,98,195,1) 37%, rgba(70,179,195,1) 84%); 
+  background: rgb(78, 141, 235);
+  background: linear-gradient(173deg, rgb(59, 122, 218) 37%, rgba(70,179,195,1) 84%); 
   z-index: -211;
   margin: auto;
   padding: 2rem 2rem 2rem 2rem;
   box-shadow: 3px 3px 5px #61616152;
-  border-radius: 4%;
+  border-radius: 2%;
   margin-bottom: 2em;
 }
 .contact-form{
@@ -121,8 +124,8 @@ textarea.contact-input~ .icon{
 }
 #contact-submit{
   font-size: 14px;
-  width: 10vw;
-  height: 7vh;
+  width: 9vw;
+  height: 6vh;
   border: .6px rgb(0, 0, 0) solid;
   background-color: inherit;
   border-radius: 6px;
@@ -158,5 +161,10 @@ fieldset{
   }
   .SMS{
     padding-top: 5rem;
+  }
+  .form-wrapper{
+    max-width: 29rem;
+    padding: 2em 1em 2em 1em;
+  
   }
 }

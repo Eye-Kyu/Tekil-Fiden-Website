@@ -1,59 +1,3 @@
-
-.preload {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #161616;
-  z-index: 1111;
-  display: grid;
-  place-content: center;
-  justify-items: center;
-  transition: 500ms ease-in-out;
-}
-.preload > * {
-  transition: 300ms ease-in-out;
-}
-.preload.loaded > * {
-  opacity: 0;
-}
-.preload.loaded {
-  transition-delay: 200ms;
-  transform: translateY(100%);
-}
-.circle {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
-  border: 2px solid white;
-  border-block-start-color: #0c0c0c;
-  margin-block-end: 40px;
-  animation: rotate360 1s linear infinite;
-}
-@keyframes rotate360 {
-  0% { transform: rotate(0);}
-  100% { transform: rotate(1turn);}
-}
-.preload .text {
-  background-image: linear-gradient(90deg, transparent 0% 16.66%, #1f1f1f 33.33% 50%, transparent 66.66% 75%);
-  background-size: 500%;
-  font-size: calc(2rem + 3vw);
-  font-weight: 700;
-  line-height: 1em;
-  letter-spacing: 16px;
-  padding-inline-start: 16px;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-stroke: 0.5px black;
-  animation: loadingText linear 2s infinite;
-}
-@keyframes loadingText {
-  0% {background-position: 100%;}
-  100% { background-position: 0%;}
-}
-
 /*Carousel Slider*/
 .swiper{
   height: 100vh;
@@ -102,7 +46,7 @@
   background-position: center;
   object-fit: cover;
   background-size: cover;
-  position: relative;
+  position: absolute;
   z-index: 1;
 }
 .landing-text{
@@ -180,6 +124,12 @@
   }
   .swiper{
     height: 100vh;
+    }
+    .carousel .carousel__image {
+      width: 100vw;
+      height: 100vh;
+      object-fit: cover;
+      position: absolute;
     }
 }
     /* Why Section*/
