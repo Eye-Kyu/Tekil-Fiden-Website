@@ -16,28 +16,52 @@
 </head>
 
 <body>
+
+  <div class="preload" data-preload>
+    <div class="circle"></div>
+    <p class ="text">TEKIL FIDEN</p>
+  </div>
+
   
   <section class="main">
 
-    <section class="landing-page">
-      <nav>
-        <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="solutions.html">Services and Solutions</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-  
-        <ul>
-          <li class="logo"><a href="index.html"><img src="/images/Tekil Fiden Logo 1.png"></a></li>
-          <li class="hideonMobile"><a href="index.html">Home</a></li>
-          <li class="hideonMobile"><a href="solutions.html">Services and Solutions</a></li>
-          <li class="hideonMobile"><a href="Contact.html">Contact Us</a></li>
-          <li class="menu-Button" onclick=showSidebar() ><a href="#"><i class="fa-solid fa-bars"></i> </a></li>
-        </ul>
-      </nav>
-      
-    </section>
+
+  <nav>
+    <div class="info">
+       <a href="index.html"><img src="/images/Tekil Fiden Logo 1.png"></a>
+    </div>
+   
+    <div class="toggle-btn">
+        <button class="burger"
+        onclick="this.classList.toggle('active');"></button>
+    </div>
+</nav>
+
+<div class="overlay">
+    <div class="overlay-menu">
+        <div class="menu-item">
+            <p><a href="index.html">Home</a></p>
+        </div>
+        <div class="menu-item">
+            <p id="active"><a href="solutions.html">Services and Solutions</a></p>
+        </div>
+        <div class="menu-item">
+            <p><a href="Contact.html">Contact</a></p>
+        </div>
+    </div>
+
+    <div class="sub-nav">
+        <p><a href="#">Twitter</a></p>
+        <p>.</p>
+        <p><a href="#">Instagram</a></p>
+        <p>.</p>
+        <p><a href="#">LinkedIn</a></p>
+        <p>.</p>
+        <p><a href="#">Facebook</a></p>
+        
+    </div>
+</div>
+
 
   </section>
  
@@ -45,6 +69,8 @@
 
 
   <!--Content starts-->
+<section id="mengine">
+
   <div class="mbisha">
     <img src="/images/technician.jpg" alt="Our Well Trained IT Technician">
     <div class="weoffer">
@@ -55,51 +81,51 @@
   </div>
 
 <section class="mboka">
-  <div>
+  <div class="def">
     <img src="/images/cambium.png">
     <h5>Voice Intergration</h5><hr>
     <p>Streamline your company's communication, automate tasks and enhance customer service, thereby improving efficiency, competitiveness and overall business perfomance.</p>
     </div>
-  <div>
+  <div class="def">
     <img src="/images/videconference.jpg">
     <h5>Video Conferencing</h5><hr>
     <p>Soar to greater heights by tearing down geographical barriers, ensuring remote collaboration while simultaneously reducing travel costs, boosting efficiency, productivity and reach. </p>
   </div>
-  <div>
+  <div class="def">
     <img src="/images/cctv surveilance.jpg">
     <h5>Security Surveillance</h5><hr>
     <p>Monitor, Record, Analyze activity in certain areas.<br>Safeguard your assets and property </p>
      </div>
-  <div>
+  <div class="def">
     <img src="/images/cctvinstall.jpg">
     <h5>Structured Cabling</h5><hr>
     <p>We provides an ‘end to end’ service from design to implementation. We design and build cabling infrastructure systems that support multiple voice, data, video and multimedia systems.</p>
   
   </div>
-  <div>
+  <div class="def">
     <img src="/images/IMG-20230905-WA0021.jpg">
     <h5>Virtual Private Network</h5><hr>
     <p>Safeguard your sensitive data, maintain your privacy, and enable secure remote access to your network ensuring your network's integrity and business operations' continuity. </p>
   </div>
-  <div>
+  <div class="def">
     <img src="/images/viuu.jpg">
     <h5>Steel Mast Erection</h5><hr>
     <p>Boost your signal strength allowing you to reach uncharted areas with an unwavering connection signal
       supporting efficient operations, making it vital for your company's communication and network needs</p>
   </div>
-  <div>
+  <div class="def">
     <img src="/images/viuu.jpg">
     <h5>Power Backup</h5><hr>
     <p>For uninterrupted operations, safeguarding your data, maintaining productivity, and ensuring business continuity during outages, preserving your reputation and profitability. </p>
   </div>
-  <div>
+  <div class="def">
     <img src="/images/viuu.jpg">
     <h5>VSAT Solutions</h5><hr>
     <p>
       Boost your connectivity and communication, data transfer, and remote operations, driving your enterprise's growth and success
      </p> 
     </div>
-    <div>
+    <div class="def">
       <img src="/images/viuu.jpg">
       <h5>CCTV Installation</h5><hr>
       <p>Enhance your security, eliminate theft, monitor employee behavior, and provides valuable evidence, 
@@ -154,6 +180,8 @@
       </div>
 
   
+</section>
+
 </section>
 
 
@@ -240,8 +268,13 @@
   <a href="https://lordicon.com/">Icons by Lordicon.com</a>
 </footer>
 
+<script src="/gsap/gsap.min.js"></script>
+<script src="/gsap/ScrollTrigger.min.js"></script>
+<script src="/gsap/CSSRulePlugin.min.js"></script>
+
       <script src="/javascript/tekil.js"></script>
       <script src="/javascript/nav.js"></script>
+      <script src="/javascript/gsap.js"></script>
   </body>
   </html>
   

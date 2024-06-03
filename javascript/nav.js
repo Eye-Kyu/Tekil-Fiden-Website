@@ -1,11 +1,13 @@
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-}
-function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-}
+//Preloader
+const preloader = document.querySelector("[data-preload]");
+
+window.addEventListener("load" , function()  {
+  preloader.classList.add("loaded");
+  document.body.classList.add("loaded");
+});
+  
+
+
 
 
 //Carousel slider//
@@ -77,3 +79,23 @@ nextButton.addEventListener('click', e => {
     hideShowArrows(slides, prevButton, nextButton, nextIndex);
     
 });
+
+
+
+
+
+//Smooth scrolling with lenis
+const lenis = new lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+lenis.on('scroll', ScrollTrigger.update)
+
+gsap.ticker.add((time)=>{
+  lenis.raf(time * 1000)
+})
+
+gsap.ticker.lagSmoothing(0)
+

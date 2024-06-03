@@ -21,8 +21,17 @@ img{
 
 
   /*Hero section*/
+  #mengine {
+    z-index: 3;
+  }
+  .mbisha {
+    height: 95vh;
+    padding: 2em 2em 2em 2em;
+    object-fit: cover;
+  }
 .mbisha img{
-  height: 90vh;
+  height: 100%;
+  border-radius: 1em;
 }
 .weoffer {
   position: absolute;
@@ -34,15 +43,21 @@ img{
   padding-bottom: 19px;
   width: 80%;
   letter-spacing: 4px;
+  line-height: 1.4em;
 }
 .weoffer p{
   font-size: 14px;
   line-height: 27px;
 }
 @media screen and (max-width:858px) {
+  .mbisha {
+    height: 60vh;
+    padding: 2em .4em 2em .4em;
+    object-fit: cover;
+  }
   .mbisha img{
     width: 100vw;
-    height: 70vh;
+    height: 50vh;
   }
   .weoffer{
     top: 10%;
@@ -52,11 +67,13 @@ img{
   .weoffer h1{
     padding-bottom: 8px;
     letter-spacing: 2px;
-    font-size: 13px;
+    font-size: 14px;
+    width: 100%;
   }
   .weoffer p{
     font-size: 11px;
     line-height: 23px;
+    font-style: italic;
   }
 }
 
@@ -68,24 +85,31 @@ img{
   justify-content: center;
   gap: 2em;
   position: relative;
-  top: -40px;
+  top: 0;
+ background: linear-gradient(to bottom, #ffff, #ffff 50%, #eee 75%, #dfdfdf9e 75%);
 }
 .mboka div{
   object-fit: contain;
   width: 20vw;
   border: solid rgb(141, 145, 146);
+  box-shadow: 4px 13px 10px #61616152;
   border-width: 1.9px;
   margin-bottom: 2em;
   border-radius: 10px;
+  background-color: white;
 }
-.mboka img{
-  height: 16vh;
-  width: 20vh;
+.mboka div img{
+  height: 12vh;
+  width: 12vh;
   border-radius: 50%;
   display: flex;
   margin: auto;
   padding-top: 6px;
-
+  transition: 0.5s ease-in-out;
+  transform: scale(1.06);
+}
+.mboka div img:hover{
+transform: scale(1);
 }
 .mboka p{
   font-size: 14px;
@@ -96,35 +120,53 @@ img{
   text-align: center;
   font-size: 14px;
   padding-top:7px;
+  /*border-bottom: 1px solid rgb(189, 188, 188);
+  border-radius: 40%;
+  */
 }
+
 .mboka hr{
   margin: auto;
-  color: black;
+  color: rgb(212, 211, 211);
+  height: 1px;
+  box-shadow: inset;
+
 }
 @media screen and (max-width:858px) {
   .mboka{
     grid-template-columns: auto auto;
-    padding: 0 1em 0 1em;
+    padding: 4em 1em 0 1em;
+    margin-top: 4em;    
     gap: 1em;
     top: -16px;
   }
   .mboka div{
-    width: 46vw;
+    width: 44vw;
     margin-bottom: 1em;
   }
   .mboka img{
     height: 9vh;
-    width: 14vw;
+    width: 12vw;
     padding-top: 3px;
   }
+  .mboka div img{
+    height: 9vh;
+    width: 8vh;
+    border-radius: 70%;
+    display: flex;
+    margin: auto;
+    padding-top: 6px;
+    transition: 0.5s ease-in-out;
+    transform: scale(1.06);
+  }
   .mboka p{
-    font-size: 12px;
+    font-size: 11px;
     line-height: 20px;
     font-weight: 300;
     padding: 4px;
   }
   .mboka h5{
-    font-size:14px
+    font-size:13px
   }
 
 }
@@ -132,39 +174,51 @@ img{
 
 /*Nationwide Clients*/
   .Clients{
-    background-color: rgb(95, 92, 92);
+    background: radial-gradient(circle, #000000 10%, transparent 11%);
+    background-size: .6em .6em;
+    background-color: #DFDFDF9E;
+    opacity: 1;
+    height: 46vh;  
+    transition: 800ms ease-in-out;
+    padding-top: .7em;
+  }
+  .Clients:hover{
+    background-color: #a5a5a5;
+ 
   }
   .clientelle{
   width: 100vw;
   display: grid;
-  padding-top: 7em;
   position: relative;
 }
 .clientelle h1{
   text-align: center;
-  font-size: 3.2rem;
+  font-size: 2.8rem;
   letter-spacing: -0.075rem;
   font-weight: 900px;
   text-rendering: optimizelegibility;
-  line-height: 1.1;
-  display: none;
+  line-height: 40px;
+  transition: 800ms ease-in-out;
 }
 .arrangement{
   width: 70vw;
-  height: 50vh;
+  height: 39vh;
   margin: auto;
   display: grid;
   grid-template-rows: repeat(auto-fit, 1fr);
   grid-template-columns: repeat(4, 1fr);
   gap: 4px;
 }
+
 .arrangement .hero{
-  filter: grayscale(100%);
+  filter: grayscale(0%);
+  width: 100px;
+  height: 100px;
 }
 .arrangement .hero:hover{
  filter: grayscale(0%);
  transform: scale(1.1);
- transition: ease-in 280ms;
+ transition: 300ms ease-in-out ;
  transition-delay: 100ms;
 }
 .arrangement .hero:nth-child(4){
@@ -173,8 +227,8 @@ img{
 }
 
   .hero{
-    width: 120px;
-    height: 120px;
+    width: 100px;
+    height: 90px;
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -209,7 +263,8 @@ img{
 .Grow{
   display: flex;
   padding: 2em 2em 2em 2em;
-  background-color: rgb(71, 71, 71);
+  background-color: rgb(32, 32, 32);
+  display: none;
 }
 .timu {
   display: flex;
@@ -218,11 +273,12 @@ img{
   gap: 16px;
   width: 40vw;
   padding-right: 2em;
-  color: wheat;
+  color: rgb(253, 231, 189);
 }
 .timu h3{
-  font-size: 3em;
+  font-size: 3.3em;
   line-height: 1.2em;
+  letter-spacing: 1.7px;
 }
 .facecard {
   width: 60vw;

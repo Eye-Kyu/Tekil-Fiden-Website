@@ -5,37 +5,61 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie-edge">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link href="https://fonts.googleapis.com/css2?family=Teko:wght@300;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/css/Contact.css">
 <link rel="stylesheet" href="/css/Header & Footer.css">
 <title>Get in touch with Us</title>
 <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
 </head>
 <body>
+
+  <div class="preload" data-preload>
+    <div class="circle"></div>
+    <p class ="text">TEKIL FIDEN</p>
+  </div>
+
   
   <section class="main">
         
     <section class="landing-page">
-      <nav>
-        <ul class="sidebar">
-          <li onclick=hideSidebar()><a href="#"><i class="fa-regular fa-circle-xmark"></i></a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="solutions.html">Services and Solutions</a></li>
-          <li><a href="Contact.html">Contact Us</a></li>
-        </ul>
-  
-        <ul>
-          <li class="logo"><a href="index.html"><img src="/images/Tekil Fiden Logo 1.png"></a></li>
-          <li class="hideonMobile"><a href="index.html">Home</a></li>
-          <li class="hideonMobile"><a href="solutions.html">Services and Solutions</a></li>
-          <li class="hideonMobile"><a href="Contact.html">Contact Us</a></li>
-          <li class="menu-Button" onclick=showSidebar() ><a href="#"><i class="fa-solid fa-bars"></i></a></li>
-        </ul>
-      </nav>
-      
-    </section>
- 
 
+    
+
+      <nav>
+        <div class="info">
+           <a href="index.html"><img src="/images/Tekil Fiden Logo 1.png"></a>
+        </div>
+       
+        <div class="toggle-btn">
+            <button class="burger"
+            onclick="this.classList.toggle('active');"></button>
+        </div>
+    </nav>
+    
+    <div class="overlay">
+        <div class="overlay-menu">
+            <div class="menu-item">
+                <p><a href="index.html">Home</a></p>
+            </div>
+            <div class="menu-item">
+                <p><a href="solutions.html">Services and Solutions</a></p>
+            </div>
+            <div class="menu-item">
+                <p id="active"><a href="Contact.html">Contact</a></p>
+            </div>
+        </div>
+    
+        <div class="sub-nav">
+            <p><a href="#">Twitter</a></p>
+            <p>.</p>
+            <p><a href="#">Instagram</a></p>
+            <p>.</p>
+            <p><a href="#">LinkedIn</a></p>
+            <p>.</p>
+            <p><a href="#">Facebook</a></p>
+            
+        </div>
+    </div>
 
 
   <section class="SMS">
@@ -45,7 +69,7 @@
         <p>Contact us for a custom quote!</p>
       </div>
 
-      <form action="index.html" method="post"
+      <form action="https://formsubmit.co/wankenobi29@gmail.com" method="POST"
       class="contact-form">
     <div class="input-wrap">
       <input class="contact-input" autocomplete="off" 
@@ -182,9 +206,14 @@
     <a href="https://lordicon.com/">Icons by Lordicon.com</a>
  </footer>
  
+ <script src="/gsap/gsap.min.js"></script>
+ <script src="/gsap/ScrollTrigger.min.js"></script>
+ <script src="/gsap/CSSRulePlugin.min.js"></script>
+
 
 
   <script src="/javascript/tekil.js"></script>
   <script src="/javascript/nav.js"></script>
+  <script src="/javascript/gsap.js"></script>
 </body>
 </html>

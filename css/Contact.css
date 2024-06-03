@@ -23,17 +23,28 @@ body{
   text-rendering: optimizeLegibility;
 }
 
+.fa-solid{
+  color: black;
+}
+
 
 .SMS{
- background-color: rgb(255, 248, 234);
+ background-color: #ffffff;
  padding-top: 6rem;
+ padding-bottom: .4em;
+ position: relative;
+ z-index: 1;
 }
 .form-wrapper{
   max-width: 32rem;
-  background-color: rgba(255, 255, 0, 0.158);
+  background: rgb(78, 141, 235);
+  background: linear-gradient(173deg, rgb(59, 122, 218) 37%, rgba(70,179,195,1) 84%); 
   z-index: -211;
   margin: auto;
   padding: 2rem 2rem 2rem 2rem;
+  box-shadow: 3px 3px 5px #61616152;
+  border-radius: 2%;
+  margin-bottom: 2em;
 }
 .contact-form{
   display: grid;
@@ -52,8 +63,12 @@ body{
   transition: 0.3s;
   font-weight: 500;
   padding: 1.5rem 1.35rem calc(0.75rem - 2px) 1.35rem;
-  border-radius: 8px;
-  background-color: #3299dd25;
+  border-radius: 3px;
+  border-top: none;
+  background-color: inherit;
+  border-bottom: 1px solid black;
+  /*
+  box-shadow: 1px 1px 3px #ffffffdc; */
 }
 .input-wrap{
   position: relative;
@@ -64,14 +79,15 @@ body{
   left: calc(1.35rem + 2px);
   transform: translateY(55%);
   pointer-events: none;
-  transition: 0.2s ease-in-out  0.2s;
+  transition: 0.3s ease-in-out ;
 }
 .input-wrap .icon{
   position: absolute;
   right: calc(1.35rem + 2px);
   transform: translateY(-50%);
   pointer-events: none;
-  font-size: 1.25rem;
+  top: 1.8rem;
+  font-size: 1rem;
   transition: 0.3s ease-in-out ;
 }
 textarea.contact-input{
@@ -84,20 +100,22 @@ textarea.contact-input~ label{
   transform: none;
 }
 textarea.contact-input~ .icon{
-  top: 1.35rem;
+  top: 1.1rem;
   transform: none;
 }
 .input-wrap.focus .contact-input {
   background-color: rgba(234, 242, 250, 0);
-  border: 2px solid var(--blue);
-  box-shadow:  0 2px 0 0 rgb(48, 172, 166);
+  border: none;
+  box-shadow:  0 1px 0 0 rgb(203, 210, 211);
   transition: 0.4s;
 } 
 .input-wrap.focus label{
-  color: rgb(2, 2, 2);
+  color: white;
 }
 .input-wrap.focus .icon{
-  color: var(--blue)
+  color: var(--white);
+  font-size: 0.7rem;
+  top: 0.7rem;
 }
 .input-wrap.focus label{
   font-size: 0.66rem;
@@ -106,25 +124,47 @@ textarea.contact-input~ .icon{
 }
 #contact-submit{
   font-size: 14px;
-  width: 10vw;
-  height: 7vh;
-  background-color: var(--blue);
-  border-radius: 10px;
-  border: none;
+  width: 9vw;
+  height: 6vh;
+  border: .6px rgb(0, 0, 0) solid;
+  background-color: inherit;
+  border-radius: 6px;
   letter-spacing: 6px;
   text-transform:capitalize;
+  transition: 0.3s ease-in-out;
 }
 fieldset{
   display: none;
 }
 #contact-submit:hover{
-  text-transform: uppercase;
+  background-color: #3299dd34;
+  color: rgb(0, 0, 0);
+  border: .8px rgb(255, 255, 255) solid;
 }
 .contact-heading h1{
   font-family:'IBM Plex Sans', sans-serif;
   font-size: 26px;
+  font-weight: lighter;
 }
 .contact-heading p{
   font-size: 16px;
   padding-top: 1em;
+}
+
+@media screen and (max-width:858px){
+  .input-wrap label{
+    font-size: 12px;
+    left: calc(1rem + 2px);
+  }
+  #contact-submit{
+    width: auto;
+  }
+  .SMS{
+    padding-top: 5rem;
+  }
+  .form-wrapper{
+    max-width: 29rem;
+    padding: 2em 1em 2em 1em;
+  
+  }
 }
