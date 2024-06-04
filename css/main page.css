@@ -3,8 +3,15 @@
     #carouselExampleCaptions {
       overflow: hidden;
     }
+    .carousel-inner {
+      height: 100vh;
+      width: 100vw;
+      overflow-x: hidden;
+    }
     .carousel-item {
       height: 100vh;
+      width: 100vw;
+      overflow-x: hidden;
     }
     .carousel-caption {
       display: flex;
@@ -44,6 +51,37 @@
     border-radius: 50%;
    }
 
+   @media screen and (max-width:858px) {
+    body {
+      width: 100vw;
+      height: auto;
+      overflow-x: hidden;
+    }
+    .main {
+      width: 100vw;
+      height: auto;
+      overflow-x: hidden;
+    }
+    .carousel-inner {
+      height: 100vh;
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    .carousel-item img {
+      height: 812px;
+      width: 375px;
+      overflow: hidden;
+    }
+    .swiper {
+      width: 100vw;
+      overflow-x: hidden;
+    }
+    .carousel {
+      width: 100vw;
+      overflow: hidden;
+    }
+
+   }
 #why{
   background-image: url(/images/pattern.svg);
   height: 56vh;

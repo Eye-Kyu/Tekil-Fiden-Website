@@ -4,12 +4,16 @@
   font-family: 'Zodiak';
   src: url(/fonts/Zodiak_Complete/Fonts/OTF/Zodiak-Light.otf);
 }
+@font-face {
+  font-family: 'Defaulti';
+  src: url(/fonts/GeneralSans_Complete/Fonts/TTF/GeneralSans-Variable.ttf);
+}
 
 
 :root {
     --blue:  #3299dd;
     --white: #ffffff;
-    --default-font: 'IBM Plex Sans', sans-serif;
+    --default-font: Defaulti;
   }
   *{
       margin: 0px;
@@ -20,7 +24,7 @@
   }
   body{
     width: 100%;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: Defaulti;
     overflow-x: hidden;
     background-color: var(--white);
     font-weight: 100;
@@ -30,7 +34,7 @@
   }
   body p{
     font-size: 14px;
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: Default;
   }
   img{
     max-width: 100%;
