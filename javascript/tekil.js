@@ -26,6 +26,6 @@ inputs.forEach(ipt => {
      ipt.parentNode.classList.remove("not-empty")
     }
     ipt.addEventListener("blur", () =>{
-    ipt.parentNode.classList.remove("focus")
+    ipt.parentNode.classList.add("remain")
     })
 })

@@ -109,9 +109,7 @@ textarea.contact-input~ .icon{
   box-shadow:  0 1px 0 0 rgb(203, 210, 211);
   transition: 0.4s;
 } 
-.input-wrap.focus label{
-  color: white;
-}
+
 .input-wrap.focus .icon{
   color: var(--white);
   font-size: 0.7rem;
@@ -121,6 +119,13 @@ textarea.contact-input~ .icon{
   font-size: 0.66rem;
   top: 0.60rem;
   transform: translateY(-50%);
+  color: white;
+}
+.remain {
+  font-size: 0.66rem;
+  top: 0.60rem;
+  transform: translateY(-50%);
+  color: white;
 }
 #contact-submit{
   font-size: 14px;

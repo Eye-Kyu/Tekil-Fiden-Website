@@ -5,21 +5,17 @@ window.addEventListener("load" , function()  {
   preloader.classList.add("loaded");
   document.body.classList.add("loaded");
 });
-  
-
 
 //Smooth scrolling with lenis
-const lenis = new lenis()
+const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
   console.log(e)
 })
 
-lenis.on('scroll', ScrollTrigger.update)
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
 
-gsap.ticker.add((time)=>{
-  lenis.raf(time * 1000)
-})
-
-gsap.ticker.lagSmoothing(0)
-
+requestAnimationFrame(raf)

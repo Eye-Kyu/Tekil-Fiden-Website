@@ -1,3 +1,6 @@
+
+
+//const timeline12 = new Timeline
 gsap.registerPlugin(ScrollTrigger);
 
 /* 
